@@ -10,10 +10,12 @@ voices = engine.getProperty("voices")
 engine.setProperty("voice", voices[1].id)
 
 def tts(message):
+    
     engine.say(message)
     engine.runAndWait()
 
 def clean():
+    
     os.system("cls")
 
 if __name__ == "__main__":
